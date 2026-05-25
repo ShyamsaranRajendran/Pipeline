@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-utility"
+version = "1.0.0"
+description = "Utility helpers for the monorepo"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest", "coverage", "pytest-cov"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

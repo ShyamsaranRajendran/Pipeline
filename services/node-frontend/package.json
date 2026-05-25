@@ -1,0 +1,11 @@
+{
+  "name": "node-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "node ./scripts/lint.mjs",
+    "test": "node --test",
+    "coverage": "node --test --experimental-test-coverage"
+  }
+}
